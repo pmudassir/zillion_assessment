@@ -1,0 +1,16 @@
+.welcome {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #f5f5f5;
+  }
+  
+  .welcome-text {
+    flex: 1;
+  }
+  
+  .welcome-image img {
+    max-width: 100%;
+    height: auto;
+  }
+  
