@@ -1,25 +1,32 @@
 import React from 'react';
-import './footer.css';
+import './footer.css'; // Import your CSS file
 
 const Footer = () => {
-    return (
-        <footer className="footer">
-            <div className="footer-content">
-                <ul className="footer-links">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Products</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                </ul>
-                <div className="social-icons">
-                    <a href="#" className="icon">Facebook</a>
-                    <a href="#" className="icon">Twitter</a>
-                    {/* Add more social icons */}
-                </div>
-            </div>
-            <p className="copyright">&copy; 2023 Your Company. All rights reserved.</p>
-        </footer>
-    );
+  return (
+    <footer className="footer">
+      <div className="footer-container">
+        <div className="footer-content">
+          <h3>Contact Us</h3>
+          <p>Feel free to get in touch with us</p>
+          <button className="contact-button">Contact</button>
+        </div>
+        <div className="footer-social">
+          <h3>Follow Us</h3>
+          <div className="social-icons">
+            <a href="#" className="social-icon">
+              <i className="fab fa-facebook">Facebook          </i>
+            </a>
+            <a href="#" className="social-icon">
+              <i className="fab fa-twitter">Twitter          </i>
+            </a>
+            <a href="#" className="social-icon">
+              <i className="fab fa-instagram">Instagram          </i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  );
 };
 
 export default Footer;

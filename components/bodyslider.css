@@ -1,9 +1,21 @@
-.body-slider {
-    margin: 20px 0;
-  }
-  
-  .swiper-slide img {
-    max-width: 100%;
-    height: auto;
-  }
-  
+/* banner.css */
+
+.banner {
+  position: relative;
+  overflow: hidden;
+  height: 400px;
+}
+
+.slide {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slide img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}

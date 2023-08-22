@@ -1,38 +1,63 @@
+/* MainMenu.css */
+
 .main-menu {
-    background-color: #333;
-    color: white;
-    padding: 10px 0;
-  }
-  
-  .menu-items {
-    list-style: none;
-    display: flex;
-    justify-content: space-around;
-  }
-  
-  .menu-items li {
-    margin: 0 10px;
-  }
-  
-  .menu-items li a {
-    text-decoration: none;
-    color: white;
-  }
-  
-  .mega-menu {
-    position: relative;
-  }
-  
-  .mega-content {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: #fff;
-    padding: 10px;
-  }
-  
-  .mega-menu:hover .mega-content {
-    display: block;
-  }
-  
+  background-color: #222;
+  color: white;
+  padding: 20px 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+.menu-items {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.menu-items li {
+  margin: 0 20px;
+}
+
+.menu-items li a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+.menu-items li a:hover {
+  color: #f39c12;
+}
+
+.mega-menu {
+  position: relative;
+  z-index: 99;
+}
+
+.mega-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #333;
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: opacity 0.3s, transform 0.3s, visibility 0s linear 0.3s;
+}
+
+.mega-column{
+  background-color: #333;
+}
+
+.mega-menu:hover .mega-content {
+  display: flex;
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  transition: opacity 0.3s, transform 0.3s, visibility 0s;
+}
