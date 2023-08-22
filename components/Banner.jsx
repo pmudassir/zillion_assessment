@@ -8,16 +8,16 @@ const Banner = () => {
     useEffect(() => {
         const interval = setInterval(() => {
             setActiveSlide((prevSlide) => (prevSlide + 1) % 3);
-        }, 5000); // Change slide every 5 seconds
+        }, 5000);
 
-        return () => clearInterval(interval); // Clear interval on unmount
+        return () => clearInterval(interval);
     }, []);
 
     const slideContainerStyle = {
         display: 'flex',
-        width: '300%', // Display three slides in a row
-        transition: 'transform 0.5s ease-in-out', // Add smooth transition
-        marginLeft: `-${activeSlide * 100}%`, // Adjust the slide position
+        width: '300%',
+        transition: 'transform 0.5s ease-in-out',
+        marginLeft: `-${activeSlide * 100}%`,
     };
 
     return (
